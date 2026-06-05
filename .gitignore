@@ -1,0 +1,8 @@
+# Images originais (grandes)
+Fotos Advogado/
+*.png
+*.jpeg
+*.jpg
+
+# Diretório do git
+.git/

@@ -1,0 +1,240 @@
+/* ============================================================
+   Dr. Fernando Torres - Advogado Trabalhista
+   Full Stylesheet (carregado via preload não-bloqueante)
+   ============================================================ */
+
+/* ---- Color Variables ---- */
+:root {
+  --primary: #C69B3C;
+  --primary-hover: #d4a83f;
+  --primary-glow: rgba(198, 155, 60, 0.3);
+  --primary-glow-heavy: rgba(198, 155, 60, 0.4);
+  --on-primary: #000000;
+  --background: #0A0A0A;
+  --surface-container: #1A1A1A;
+  --surface-container-lowest: #0A0A0A;
+  --surface-variant: #252525;
+  --on-background: #FFFFFF;
+  --on-surface-variant: #BFC1C2;
+  --border-color: #252525;
+  --radius: 1rem;
+  --radius-full: 9999px;
+  --container-max: 1280px;
+  --margin-mobile: 20px;
+  --margin-desktop: 64px;
+}
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; background: var(--background); color: var(--on-background); min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ---- Layout ---- */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-grow { flex-grow: 1; }
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.hidden { display: none; }
+.w-full { width: 100%; }
+.w-fit { width: fit-content; }
+.w-12 { width: 3rem; }
+.h-12 { height: 3rem; }
+.h-16 { height: 4rem; }
+.h-full { height: 100%; }
+.min-h-screen { min-height: 100vh; }
+.object-contain { object-fit: contain; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.top-0 { top: 0; left: 0; right: 0; }
+.bottom-6 { bottom: 1.5rem; }
+.right-6 { right: 1.5rem; }
+.inset-0 { inset: 0; }
+.-inset-4 { top: -1rem; right: -1rem; bottom: -1rem; left: -1rem; }
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-50 { z-index: 50; }
+.overflow-hidden { overflow: hidden; }
+
+/* ---- Spacing ---- */
+.p-4 { padding: 1rem; }
+.p-8 { padding: 2rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.px-margin-mobile { padding-left: 20px; padding-right: 20px; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.pt-16 { padding-top: 4rem; }
+.pb-24 { padding-bottom: 6rem; }
+.pl-6 { padding-left: 1.5rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-8 { margin-top: 2rem; }
+.mt-auto { margin-top: auto; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+
+/* ---- Gap ---- */
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.gap-12 { gap: 3rem; }
+.gap-16 { gap: 4rem; }
+
+/* ---- Space-y ---- */
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-8 > * + * { margin-top: 2rem; }
+.space-y-16 > * + * { margin-top: 4rem; }
+
+/* ---- Alignment ---- */
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.text-center { text-align: center; }
+
+/* ---- Colors ---- */
+.bg-background { background-color: var(--background); }
+.bg-primary { background-color: var(--primary); }
+.bg-primary\/10 { background-color: rgba(198, 155, 60, 0.1); }
+.bg-primary\/5 { background-color: rgba(198, 155, 60, 0.05); }
+.bg-surface-container { background-color: var(--surface-container); }
+.bg-surface-container-lowest { background-color: var(--surface-container-lowest); }
+.bg-transparent { background-color: transparent; }
+.text-black { color: var(--on-primary); }
+.text-on-background { color: var(--on-background); }
+.text-on-surface-variant { color: var(--on-surface-variant); }
+.text-primary { color: var(--primary); }
+.text-white { color: #FFFFFF; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.border-primary { border-color: var(--primary); }
+.border-surface-variant { border-color: var(--border-color); }
+.border { border: 1px solid var(--border-color); }
+.border-b { border-bottom: 1px solid var(--border-color); }
+.border-t { border-top: 1px solid var(--border-color); }
+.border-l-2 { border-left: 2px solid var(--primary); }
+
+/* ---- Typography ---- */
+.font-bold { font-weight: 700; }
+.uppercase { text-transform: uppercase; }
+.tracking-wider { letter-spacing: 0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.leading-relaxed { line-height: 1.625; }
+
+.text-display-lg-mobile { font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 700; }
+.text-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 600; }
+.text-headline-md { font-size: 24px; line-height: 32px; font-weight: 600; }
+.text-body-lg { font-size: 18px; line-height: 28px; font-weight: 400; }
+.text-body-md { font-size: 16px; line-height: 24px; font-weight: 400; }
+.text-label-lg { font-size: 14px; line-height: 20px; letter-spacing: 0.1em; font-weight: 600; }
+.text-label-md { font-size: 12px; line-height: 16px; font-weight: 500; }
+
+.font-display-lg-mobile { font-family: 'Montserrat', sans-serif; }
+.font-headline-lg { font-family: 'Montserrat', sans-serif; }
+.font-headline-md { font-family: 'Montserrat', sans-serif; }
+.font-body-lg { font-family: 'Montserrat', sans-serif; }
+.font-body-md { font-family: 'Montserrat', sans-serif; }
+.font-label-lg { font-family: 'Montserrat', sans-serif; }
+.font-label-md { font-family: 'Montserrat', sans-serif; }
+
+/* ---- Border Radius ---- */
+.rounded { border-radius: var(--radius); }
+.rounded-full { border-radius: var(--radius-full); }
+.rounded-xl { border-radius: 1.5rem; }
+.rounded-DEFAULT { border-radius: var(--radius); }
+
+/* ---- Shadows / Effects ---- */
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+.drop-shadow-2xl { filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.5)); }
+.blur-3xl { filter: blur(64px); }
+.opacity-10 { opacity: 0.1; }
+
+/* ---- Transitions ---- */
+.transition-all { transition: all 0.2s ease; }
+.transition-colors { transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease; }
+.transition-transform { transition: transform 0.2s ease; }
+
+/* ---- Hover States ---- */
+.hover\:brightness-110:hover { filter: brightness(1.1); }
+.hover\:scale-110:hover { transform: scale(1.1); }
+.hover\:text-primary:hover { color: var(--primary); }
+.hover\:text-primary-fixed-dim:hover { color: #efc05d; }
+.hover\:border-primary\/50:hover { border-color: rgba(198, 155, 60, 0.5); }
+.hover\:bg-primary\/10:hover { background-color: rgba(198, 155, 60, 0.1); }
+
+/* ---- Group Hover ---- */
+.group:hover .group-hover\:scale-110 { transform: scale(1.1); }
+.group:hover .group-hover\:text-primary-fixed-dim { color: #efc05d; }
+
+/* ---- Container ---- */
+.max-w-container-max { max-width: var(--container-max); }
+.max-w-2xl { max-width: 42rem; }
+.max-w-md { max-width: 28rem; }
+
+/* ---- Fixed Header ---- */
+header.fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 4rem; display: flex; align-items: center; justify-content: space-between; padding-left: 20px; padding-right: 20px; background: var(--surface-container-lowest); border-bottom: 1px solid var(--border-color); }
+
+/* ---- Services Grid ---- */
+#services-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+
+/* ---- Card de Serviço ---- */
+.card-servico { background: var(--surface-container); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color); display: flex; flex-direction: column; height: 100%; transition: all 0.2s ease; }
+.card-servico:hover { border-color: rgba(198, 155, 60, 0.5); }
+
+/* ---- Gold Gradient ---- */
+.gold-gradient { background: linear-gradient(135deg, #efc05d 0%, #c69b3c 100%); }
+
+/* ---- Border Gold Subtle ---- */
+.border-gold-subtle { border: 1px solid rgba(198, 155, 60, 0.2); }
+
+/* ---- Custom Shadows ---- */
+.shadow-\[0_0_15px_rgba\(198\2c 155\2c 60\2c 0\.3\)\] { box-shadow: 0 0 15px var(--primary-glow); }
+.shadow-\[0_0_20px_rgba\(198\2c 155\2c 60\2c 0\.4\)\] { box-shadow: 0 0 20px var(--primary-glow-heavy); }
+
+/* ---- Footer ---- */
+footer { background: var(--surface-container-lowest); width: 100%; padding: 3rem 20px; border-top: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+
+/* ---- Dark mode fix ---- */
+html.dark { color-scheme: dark; }
+
+/* ---- Whatsapp Sticky Button ---- */
+.whatsapp-btn { position: fixed; bottom: 1.5rem; right: 1.5rem; background: var(--primary); color: var(--on-primary); padding: 1rem; border-radius: var(--radius-full); box-shadow: 0 0 20px var(--primary-glow-heavy); display: flex; align-items: center; justify-content: center; z-index: 50; transition: all 0.2s ease; border: none; cursor: pointer; }
+.whatsapp-btn:hover { transform: scale(1.1); filter: brightness(1.1); }
+
+/* ---- Material Icons fallback ---- */
+.material-symbols-outlined { display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+
+/* ---- Responsive: sm (640px+) ---- */
+@media (min-width: 640px) {
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:items-center { align-items: center; }
+}
+
+/* ---- Responsive: md (768px+) ---- */
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:hidden { display: none; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:px-margin-desktop { padding-left: 64px; padding-right: 64px; }
+  .md\:font-display-lg { font-family: 'Montserrat', sans-serif; }
+  .md\:text-display-lg { font-size: 48px; line-height: 56px; letter-spacing: -0.02em; font-weight: 700; }
+  header.fixed { padding-left: 64px; padding-right: 64px; }
+  footer { padding-left: 64px; padding-right: 64px; }
+  #services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---- Responsive: lg (1024px+) ---- */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .lg\:justify-end { justify-content: flex-end; }
+  #services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ---- No shadows/flat utility ---- */
+.flat.no.shadows { box-shadow: none; }

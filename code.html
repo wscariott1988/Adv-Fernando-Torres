@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Fernando Torres - Advogado Trabalhista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#c5c7c8",
+                        "surface-bright": "#3a3939",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "inverse-on-surface": "#313030",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#131313",
+                        "on-primary": "#402d00",
+                        "on-tertiary-fixed-variant": "#444748",
+                        "primary-fixed-dim": "#efc05d",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "tertiary-fixed": "#e1e3e4",
+                        "on-primary-container": "#4a3400",
+                        "primary-container": "#c69b3c",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-tint": "#efc05d",
+                        "on-tertiary-fixed": "#191c1d",
+                        "tertiary-container": "#a0a2a3",
+                        "on-tertiary-container": "#36393a",
+                        "surface-container-lowest": "#0A0A0A",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-surface-variant": "#BFC1C2",
+                        "primary": "#C69B3C",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#474746",
+                        "on-error": "#690005",
+                        "surface-container": "#1A1A1A",
+                        "surface-variant": "#252525",
+                        "outline": "#9a8f7d",
+                        "background": "#0A0A0A",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#4e4637",
+                        "primary-fixed": "#ffdea1",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "inverse-primary": "#7a5900",
+                        "surface": "#1A1A1A",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-secondary": "#313030",
+                        "on-primary-fixed": "#261900",
+                        "on-primary-fixed-variant": "#5c4300",
+                        "secondary": "#c8c6c5",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary": "#2e3132",
+                        "on-background": "#FFFFFF",
+                        "surface-container-highest": "#353534",
+                        "surface-container-low": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #efc05d 0%, #c69b3c 100%);
+        }
+        .border-gold-subtle {
+            border: 1px solid rgba(198, 155, 60, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-surface-variant flat no shadows flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary">gavel</span>
+<span class="text-label-lg font-label-lg uppercase tracking-widest text-primary dark:text-primary">Dr. Fernando Torres</span>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<nav class="hidden md:flex gap-8">
+<a class="text-primary font-bold hover:text-primary-fixed-dim transition-colors" href="#inicio">Início</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors" href="#servicos">Serviços</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors" href="#sobre">Sobre</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-16">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(circle at center, #c69b3c 0%, transparent 70%);"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<h1 class="text-display-lg-mobile font-display-lg-mobile md:text-display-lg md:font-display-lg">
+                        Defesa Especializada dos Direitos do Trabalhador em <span class="text-primary">RO, AC e AM.</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+                        Mais de 15 anos de experiência garantindo orientação legal para trabalhadores em casos de demissões injustas e direitos não pagos.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+<a class="bg-primary text-black px-8 py-4 rounded font-bold hover:brightness-110 transition-all shadow-[0_0_15px_rgba(198,155,60,0.3)]" href="#contato">
+                            Falar com Advogado Especialista
+                        </a>
+<span class="text-label-md font-label-md text-on-surface-variant">Dr. Fernando Torres - OAB/RO 4725</span>
+</div>
+</div>
+<div class="relative flex justify-center lg:justify-end">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+<img alt="Dr. Fernando Torres profile photo" class="relative z-10 w-full max-w-md object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBJBkuFiVLc0Rc6ffscs0Tm7P6j4FtDswbC98MF67mn6JqTt-CMqVh_OuLiAyNLjX8QAz2QWn2mQUwZVrbWk7xbZU3TNwPo75rMIIlL5EU0c98X_XsNTPAl0SZvlHKiqgxRSeyNKLS3vVm8yWyf1un9Aj7KLi0gKljlgcLZ3Q1xuZzuE3I3OKS2WCuVPLUCZLOSrTL1cUPdS7rThNgVmitmhrAqIT6iCBQKrbko2uGtAxpgbqgSMHY-iMKKwiIyDdnGekm7nyS6Q"/>
+</div>
+</div>
+</section>
+<!-- Services Grid Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative border-t border-surface-variant" id="servicos">
+<div class="max-w-container-max mx-auto space-y-16">
+<div class="text-center space-y-4">
+<h2 class="text-headline-lg font-headline-lg">Áreas de Atuação</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto">Conheça seus direitos e veja como podemos defender seus interesses com precisão e autoridade.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">gavel</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Rescisão Indireta</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Quando a empresa comete falta grave (como atraso de salários), a lei permite que o trabalhador peça o fim do contrato mantendo seus direitos.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Horas Extras Não Pagas</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">O trabalho realizado além da jornada legal ou sem o intervalo adequado gera o direito ao recebimento de horas suplementares.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">healing</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Acidente de Trabalho</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Lesões ocorridas durante o exercício da função garantem direitos legais, como estabilidade provisória e eventual reparação.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">directions_car</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Acidente de Percurso</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Acidentes ocorridos no trajeto entre a residência e o local de trabalho também possuem cobertura legal e garantias ao trabalhador.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">sick</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Doença do Trabalho</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Problemas de saúde desenvolvidos ou agravados pela atividade exercida na empresa geram direitos e proteções específicas.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">warning</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Assédio Moral</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">A exposição frequente a situações humilhantes, cobranças abusivas e constrangimentos no ambiente de trabalho é protegida por lei.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">block</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Justa Causa</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">A demissão por justa causa exige provas robustas pela empresa. A lei protege o trabalhador contra aplicações abusivas dessa penalidade.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-4 text-white">Discriminação no Trabalho</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Tratamento desigual ou exclusão no ambiente corporativo por características pessoais. A legislação assegura proteção e igualdade de direitos.</p>
+<a class="text-primary font-bold flex items-center gap-2 group-hover:text-primary-fixed-dim mt-auto" href="#contato">
+                            Analisar meu caso <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Authority Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-full blur-3xl"></div>
+<img alt="Dr. Fernando Torres - Autoridade Legal" class="relative z-10 w-full max-w-md mx-auto rounded-xl border border-surface-variant shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBJBkuFiVLc0Rc6ffscs0Tm7P6j4FtDswbC98MF67mn6JqTt-CMqVh_OuLiAyNLjX8QAz2QWn2mQUwZVrbWk7xbZU3TNwPo75rMIIlL5EU0c98X_XsNTPAl0SZvlHKiqgxRSeyNKLS3vVm8yWyf1un9Aj7KLi0gKljlgcLZ3Q1xuZzuE3I3OKS2WCuVPLUCZLOSrTL1cUPdS7rThNgVmitmhrAqIT6iCBQKrbko2uGtAxpgbqgSMHY-iMKKwiIyDdnGekm7nyS6Q"/>
+</div>
+<div class="space-y-8 flex flex-col justify-center">
+<h2 class="text-headline-lg font-headline-lg">Quem é o Dr. Fernando Torres</h2>
+<a class="bg-transparent border border-primary text-primary px-8 py-3 rounded font-bold hover:bg-primary/10 transition-colors w-fit" href="#contato">
+                        Consultar Especialista
+                    </a>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed border-l-2 border-primary pl-6">
+                        "Sou advogado e, há mais de 15 anos, ajudo trabalhadores na defesa de seus direitos. Minha atuação une conhecimento jurídico, experiência prática e compromisso com cada cliente, sempre pautada pela ética, transparência e dedicação."
+                    </p>
+<a class="bg-primary text-black px-8 py-4 rounded font-bold hover:brightness-110 transition-all shadow-[0_0_15px_rgba(198,155,60,0.3)] w-fit flex items-center gap-2" href="#contato">
+                        Falar Diretamente com Dr. Fernando <span class="material-symbols-outlined text-black">chat</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-12 border-t border-surface-variant flex flex-col items-center space-y-6 px-margin-mobile text-center flat no shadows">
+<div class="text-primary font-bold text-headline-md font-headline-md tracking-wider">
+            Dr. Fernando Torres
+        </div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Advogado Trabalhista - OAB/RO 4725
+        </p>
+<div class="flex gap-6 text-label-md font-label-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacidade</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contato</a>
+</div>
+<p class="text-label-md font-label-md text-on-surface-variant/50 mt-8">
+            © 2024 Dr. Fernando Torres. Todos os direitos reservados.
+        </p>
+</footer>
+<!-- Sticky WhatsApp Button -->
+<a class="fixed bottom-6 right-6 bg-primary text-black p-4 rounded-full shadow-[0_0_20px_rgba(198,155,60,0.4)] hover:scale-110 hover:brightness-110 transition-all z-50 flex items-center justify-center" href="#contato">
+<svg fill="currentColor" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.88-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</body></html>
