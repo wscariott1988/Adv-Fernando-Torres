@@ -70,6 +70,7 @@ img { display: block; max-width: 100%; }
 .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
 .pt-16 { padding-top: 4rem; }
+.pb-12 { padding-bottom: 3rem; }
 .pb-24 { padding-bottom: 6rem; }
 .pl-6 { padding-left: 1.5rem; }
 .mx-auto { margin-left: auto; margin-right: auto; }
@@ -229,6 +230,8 @@ html.dark { color-scheme: dark; }
   header.fixed { padding-left: 64px; padding-right: 64px; }
   footer { padding-left: 64px; padding-right: 64px; }
   #services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:gap-12 { gap: 3rem; }
+  .md\:pb-24 { padding-bottom: 6rem; }
 }
 
 /* ---- Responsive: lg (1024px+) ---- */
