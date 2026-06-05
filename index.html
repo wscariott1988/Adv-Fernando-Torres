@@ -62,6 +62,7 @@ img{display:block;max-width:100%}
 .space-y-6>*+*{margin-top:1.5rem}
 .pt-16{padding-top:4rem}
 .pt-8{padding-top:2rem}
+.pt-24{padding-top:6rem}
 .pb-24{padding-bottom:6rem}
 .px-margin-mobile{padding-left:20px;padding-right:20px}
 .px-8{padding-left:2rem;padding-right:2rem}
@@ -104,14 +105,19 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   .md\:text-display-lg{font-size:48px;line-height:56px;letter-spacing:-.02em;font-weight:700}
   .md\:font-display-lg{font-family:'Montserrat',sans-serif}
   header.fixed{padding-left:64px;padding-right:64px}
+  .md\:pb-8{padding-bottom:2rem}
   .md\:pb-16{padding-bottom:4rem}
   .md\:space-y-8>*+*{margin-top:2rem}
   .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-section{min-height:calc(100vh - 4rem);display:flex;align-items:center}
+  .hero-inner{width:100%}
 }
 @media(min-width:1024px){
   .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
   .lg\:justify-end{justify-content:flex-end}
   .lg\:space-y-12>*+*{margin-top:3rem}
+  .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .sobre-img{max-width:480px;width:100%;border-radius:1rem;border:1px solid rgba(198,155,60,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.6)}
 }</style>
 
 <!-- Preload CSS completo (não bloqueante) -->
@@ -144,9 +150,9 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 <!-- Main -->
 <main class="flex-grow pt-16">
   <!-- Hero Section -->
-  <section class="relative pt-8 md:pt-0 pb-0 md:pb-16 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
+  <section class="hero-section relative pt-24 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
     <div class="absolute inset-0 z-0 opacity-10" style="background-image:radial-gradient(circle at center,#c69b3c 0%,transparent 70%)"></div>
-    <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-12 items-center relative z-10">
+    <div class="hero-inner max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center relative z-10 py-12 md:py-0">
       <div class="space-y-6 md:space-y-8">
         <h1 class="text-display-lg-mobile md:text-display-lg md:font-display-lg">
           Defesa Especializada dos Direitos do Trabalhador em <span class="text-primary">RO, AC e AM.</span>
@@ -163,7 +169,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
       </div>
       <div class="relative flex justify-center lg:justify-end">
         <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
-        <img alt="Dr. Fernando Torres" class="relative z-10 w-full max-w-md object-contain drop-shadow-2xl" src="img/hero.webp" srcset="img/hero-280.webp 280w, img/hero.webp 1080w" sizes="(max-width: 640px) 280px, 420px" width="1080" height="1080" fetchpriority="high" decoding="async" style="aspect-ratio:1">
+        <img alt="Dr. Fernando Torres" class="relative z-10 w-full max-w-md object-cover drop-shadow-2xl" src="img/hero.webp" srcset="img/hero-280.webp 280w, img/hero.webp 1080w" sizes="(max-width: 640px) 280px, 420px" fetchpriority="high" decoding="async" style="height:auto;max-height:520px;border-radius:1rem;">
       </div>
     </div>
   </section>
@@ -269,21 +275,25 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   </section>
 
   <!-- Sobre Section -->
-  <section class="py-16 lg:py-24 bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
-    <div class="space-y-8 lg:space-y-12">
-      <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="w-full max-w-5xl mx-auto" src="img/sobre.webp" srcset="img/sobre-280.webp 280w, img/sobre-640.webp 640w, img/sobre.webp 1191w" sizes="100vw" width="1191" height="953" decoding="async" loading="lazy">
-      <div class="px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-3xl mx-auto space-y-8">
+  <section class="py-16 lg:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
+    <div class="max-w-container-max mx-auto sobre-grid">
+      <!-- Imagem Bio -->
+      <div class="flex justify-center lg:justify-start" style="margin-bottom:2rem">
+        <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="sobre-img w-full" src="img/sobre.webp" srcset="img/sobre-280.webp 280w, img/sobre-640.webp 640w, img/sobre.webp 1191w" sizes="(max-width:640px) 280px, 480px" decoding="async" loading="lazy" style="height:auto;">
+      </div>
+      <!-- Texto -->
+      <div class="space-y-8" style="display:flex;flex-direction:column;justify-content:center">
         <h2 class="text-headline-lg">Quem é o Dr. Fernando Torres</h2>
-        <a class="bg-transparent border border-primary text-primary px-8 py-3 rounded font-bold transition-colors w-fit" href="https://wa.me/556992320246" target="_blank" rel="noopener">Consultar Especialista</a>
         <p class="text-body-lg text-on-surface-variant leading-relaxed border-l-2 border-primary pl-6">
           "Sou advogado e, há mais de 15 anos, ajudo trabalhadores na defesa de seus direitos. Minha atuação une conhecimento jurídico, experiência prática e compromisso com cada cliente, sempre pautada pela ética, transparência e dedicação."
         </p>
-        <a class="bg-primary text-black px-8 py-4 rounded font-bold transition-all shadow-[0_0_15px_rgba(198,155,60,0.3)] w-fit flex items-center gap-2" href="https://wa.me/556992320246" target="_blank" rel="noopener">
-          Falar Diretamente com Dr. Fernando
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-        </a>
-      </div>
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <a class="bg-primary text-black px-8 py-4 rounded font-bold transition-all shadow-[0_0_15px_rgba(198,155,60,0.3)] w-fit flex items-center gap-2" href="https://wa.me/556992320246" target="_blank" rel="noopener">
+            Falar Diretamente com Dr. Fernando
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+          </a>
+          <a class="bg-transparent border border-primary text-primary px-8 py-3 rounded font-bold transition-colors w-fit" href="https://wa.me/556992320246" target="_blank" rel="noopener">Consultar Especialista</a>
+        </div>
       </div>
     </div>
   </section>

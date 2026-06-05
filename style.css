@@ -73,6 +73,7 @@ img { display: block; max-width: 100%; }
 .pt-0 { padding-top: 0; }
 .pt-8 { padding-top: 2rem; }
 .pt-16 { padding-top: 4rem; }
+.pt-24 { padding-top: 6rem; }
 .pb-0 { padding-bottom: 0; }
 .pb-12 { padding-bottom: 3rem; }
 .pb-24 { padding-bottom: 6rem; }
@@ -194,6 +195,10 @@ header.fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 
 .card-servico { background: var(--surface-container); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color); display: flex; flex-direction: column; height: 100%; transition: all 0.2s ease; }
 .card-servico:hover { border-color: rgba(198, 155, 60, 0.5); }
 
+/* ---- Hero Section ---- */
+.hero-section { position: relative; overflow: hidden; }
+.hero-inner { width: 100%; }
+
 /* ---- Gold Gradient ---- */
 .gold-gradient { background: linear-gradient(135deg, #efc05d 0%, #c69b3c 100%); }
 
@@ -235,6 +240,7 @@ html.dark { color-scheme: dark; }
   footer { padding-left: 64px; padding-right: 64px; }
   #services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .md\:gap-12 { gap: 3rem; }
+  .md\:pb-8 { padding-bottom: 2rem; }
   .md\:pb-16 { padding-bottom: 4rem; }
   .md\:pb-24 { padding-bottom: 6rem; }
   .md\:pt-16 { padding-top: 4rem; }
@@ -249,6 +255,14 @@ html.dark { color-scheme: dark; }
   .lg\:space-y-12 > * + * { margin-top: 3rem; }
   .lg\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
   #services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  /* Sobre section 2-column layout */
+  .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .sobre-img { max-width: 480px; width: 100%; border-radius: 1rem; border: 1px solid rgba(198, 155, 60, 0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+}
+
+/* ---- Hero Section Desktop min-height ---- */
+@media (min-width: 768px) {
+  .hero-section { min-height: calc(100vh - 4rem); display: flex; align-items: center; }
 }
 
 /* ---- No shadows/flat utility ---- */
