@@ -70,6 +70,8 @@ img{display:block;max-width:100%}
 .h-16{height:4rem}
 .h-full{height:100%}
 .max-w-container-max{max-width:var(--container-max)}
+.max-w-5xl{max-width:64rem}
+.max-w-3xl{max-width:48rem}
 .max-w-md{max-width:28rem}
 .font-bold{font-weight:700}
 .uppercase{text-transform:uppercase}
@@ -105,8 +107,8 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 @media(min-width:1024px){
   .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
   .lg\:justify-end{justify-content:flex-end}
-}
-</style>
+  .lg\:space-y-12>*+*{margin-top:3rem}
+}</style>
 
 <!-- Preload CSS completo (não bloqueante) -->
 <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -153,11 +155,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
             Falar com Advogado Especialista
           </a>
           <span class="text-label-md text-on-surface-variant">Dr. Fernando Torres - OAB/RO 4725</span>
-        </div>
       </div>
-      <div class="relative flex justify-center lg:justify-end">
-        <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
-        <img alt="Dr. Fernando Torres" class="relative z-10 w-full max-w-md object-contain drop-shadow-2xl" src="img/hero.webp" srcset="img/hero-280.webp 280w, img/hero.webp 1080w" sizes="(max-width: 640px) 280px, 420px" width="1080" height="1080" fetchpriority="high" decoding="async" style="aspect-ratio:1">
       </div>
     </div>
   </section>
@@ -263,9 +261,11 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   </section>
 
   <!-- Sobre Section -->
-  <section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
-    <div class="max-w-container-max mx-auto">
-      <div class="max-w-3xl mx-auto space-y-8">
+  <section class="py-24 bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
+    <div class="space-y-8 lg:space-y-12">
+      <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="w-full max-w-5xl mx-auto" src="img/sobre.webp" srcset="img/sobre-280.webp 280w, img/sobre-640.webp 640w, img/sobre.webp 1350w" sizes="100vw" width="1350" height="953" decoding="async" loading="lazy" style="aspect-ratio:1350/953">
+      <div class="px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-3xl mx-auto space-y-8">
         <h2 class="text-headline-lg">Quem é o Dr. Fernando Torres</h2>
         <a class="bg-transparent border border-primary text-primary px-8 py-3 rounded font-bold transition-colors w-fit" href="https://wa.me/556992320246" target="_blank" rel="noopener">Consultar Especialista</a>
         <p class="text-body-lg text-on-surface-variant leading-relaxed border-l-2 border-primary pl-6">
@@ -276,8 +276,6 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
         </a>
       </div>
-      <div class="mt-12 lg:mt-16 flex justify-center">
-        <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="w-full max-w-3xl rounded-xl border border-surface-variant shadow-2xl" src="img/sobre.webp" srcset="img/sobre-280.webp 280w, img/sobre.webp 1350w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc(100vw - 128px), 768px" width="1350" height="953" decoding="async" loading="lazy" style="aspect-ratio:1350/953">
       </div>
     </div>
   </section>
