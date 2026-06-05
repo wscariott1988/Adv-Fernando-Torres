@@ -66,7 +66,6 @@ img { display: block; max-width: 100%; }
 .px-8 { padding-left: 2rem; padding-right: 2rem; }
 .px-margin-mobile { padding-left: 20px; padding-right: 20px; }
 .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
-.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
 .py-24 { padding-top: 6rem; padding-bottom: 6rem; }
 .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
@@ -234,10 +233,8 @@ html.dark { color-scheme: dark; }
   footer { padding-left: 64px; padding-right: 64px; }
   #services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .md\:gap-12 { gap: 3rem; }
-  .md\:pb-16 { padding-bottom: 4rem; }
   .md\:pb-24 { padding-bottom: 6rem; }
   .md\:pt-16 { padding-top: 4rem; }
-  .md\:space-y-8 > * + * { margin-top: 2rem; }
 }
 
 /* ---- Responsive: lg (1024px+) ---- */
@@ -246,7 +243,6 @@ html.dark { color-scheme: dark; }
   .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .lg\:justify-end { justify-content: flex-end; }
   .lg\:space-y-12 > * + * { margin-top: 3rem; }
-  .lg\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
   #services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 

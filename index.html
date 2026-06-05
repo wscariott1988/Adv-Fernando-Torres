@@ -59,7 +59,6 @@ img{display:block;max-width:100%}
 .gap-4{gap:1rem}
 .gap-8{gap:2rem}
 .space-y-8>*+*{margin-top:2rem}
-.space-y-4>*+*{margin-top:1rem}
 .pt-16{padding-top:4rem}
 .pb-24{padding-bottom:6rem}
 .px-margin-mobile{padding-left:20px;padding-right:20px}
@@ -103,8 +102,6 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   .md\:text-display-lg{font-size:48px;line-height:56px;letter-spacing:-.02em;font-weight:700}
   .md\:font-display-lg{font-family:'Montserrat',sans-serif}
   header.fixed{padding-left:64px;padding-right:64px}
-  .md\:pb-16{padding-bottom:4rem}
-  .md\:space-y-8>*+*{margin-top:2rem}
   .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(min-width:1024px){
@@ -143,10 +140,10 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 <!-- Main -->
 <main class="flex-grow pt-16">
   <!-- Hero Section -->
-  <section class="relative pt-0 pb-0 md:pb-16 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
+  <section class="relative pt-0 md:pt-16 pb-0 md:pb-24 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
     <div class="absolute inset-0 z-0 opacity-10" style="background-image:radial-gradient(circle at center,#c69b3c 0%,transparent 70%)"></div>
     <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-12 items-center relative z-10">
-      <div class="space-y-4 md:space-y-8">
+      <div class="space-y-8">
         <h1 class="text-display-lg-mobile md:text-display-lg md:font-display-lg">
           Defesa Especializada dos Direitos do Trabalhador em <span class="text-primary">RO, AC e AM.</span>
         </h1>
@@ -168,7 +165,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   </section>
 
   <!-- Services Section -->
-  <section class="py-16 lg:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative border-t border-surface-variant" id="servicos">
+  <section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative border-t border-surface-variant" id="servicos">
     <div class="max-w-container-max mx-auto space-y-16">
       <div class="text-center space-y-4">
         <h2 class="text-headline-lg">Áreas de Atuação</h2>
@@ -268,7 +265,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   </section>
 
   <!-- Sobre Section -->
-  <section class="py-16 lg:py-24 bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
+  <section class="py-24 bg-surface-container border-t border-surface-variant relative overflow-hidden" id="sobre">
     <div class="space-y-8 lg:space-y-12">
       <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="w-full max-w-5xl mx-auto" src="img/sobre.webp" srcset="img/sobre-280.webp 280w, img/sobre-640.webp 640w, img/sobre.webp 1191w" sizes="100vw" width="1191" height="953" decoding="async" loading="lazy">
       <div class="px-margin-mobile md:px-margin-desktop">
