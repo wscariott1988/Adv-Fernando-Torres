@@ -109,7 +109,7 @@
         .border-gold-subtle {
             border: 1px solid rgba(198, 155, 60, 0.2);
         }
-        .notification-toast{position:fixed;bottom:1.5rem;right:5.5rem;background:#1A1A1A;border:1px solid #252525;border-radius:12px;padding:10px;display:flex;align-items:center;gap:10px;max-width:288px;z-index:49;box-shadow:0 10px 40px rgba(0,0,0,0.5);transform:translateX(calc(100% + 3rem));opacity:0;transition:transform .6s cubic-bezier(.25,.46,.45,.94),opacity .6s cubic-bezier(.25,.46,.45,.94)}
+        .notification-toast{position:fixed;bottom:1.5rem;right:5.5rem;background:#1A1A1A;border:1px solid #252525;border-radius:12px;padding:10px;display:flex;align-items:center;gap:10px;max-width:288px;z-index:49;box-shadow:0 10px 40px rgba(0,0,0,0.5);transform:translateX(calc(100% + 3rem));opacity:0;transition:transform .9s cubic-bezier(.25,.46,.45,.94),opacity .9s cubic-bezier(.25,.46,.45,.94)}
         .notification-toast.show{transform:translateX(0);opacity:1}
         .notification-close{position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;background:#252525;border:1px solid #333;color:#BFC1C2;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;line-height:1;z-index:1}
         .notification-avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid #C69B3C;flex-shrink:0}
@@ -130,7 +130,7 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-surface-variant flat no shadows flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 w-full">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary dark:text-primary">account_balance</span>
+<span class="material-symbols-outlined text-primary dark:text-primary">balance</span>
 <span class="text-label-lg font-label-lg uppercase tracking-widest text-primary dark:text-primary">Dr. Fernando Torres</span>
 </div>
 <button class="md:hidden text-primary" onclick="toggleMenu()">
@@ -184,7 +184,7 @@
 <!-- Card 1 -->
 <div class="bg-surface-container p-8 rounded-DEFAULT border border-surface-variant hover:border-primary/50 transition-all group flex flex-col h-full">
 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary">account_balance</span>
+<span class="material-symbols-outlined text-primary">balance</span>
 </div>
 <h3 class="text-headline-md font-headline-md mb-4 text-white">Rescisão Indireta</h3>
 <p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-6">Quando a empresa comete falta grave (como atraso de salários), a lei permite que o trabalhador peça o fim do contrato mantendo seus direitos.</p>
