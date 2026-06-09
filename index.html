@@ -246,7 +246,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
       </div>
       <div class="relative flex justify-center lg:justify-end">
         <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
-        <img alt="Dr. Fernando Torres" class="relative z-10 w-full max-w-md object-cover drop-shadow-2xl" src="img/hero.webp" srcset="img/hero-280.webp 280w, img/hero.webp 1080w" sizes="(max-width: 640px) 280px, 420px" fetchpriority="high" decoding="async" style="height:auto;max-height:520px;border-radius:1rem;">
+        <img alt="Dr. Fernando Torres" class="relative z-10 w-full max-w-md object-cover drop-shadow-2xl" src="img/hero.webp" srcset="img/hero-280.webp 280w, img/hero.webp 1080w" sizes="(max-width: 640px) 280px, 420px" width="1080" height="1080" fetchpriority="high" decoding="async" style="height:auto;max-height:520px;border-radius:1rem;aspect-ratio:1">
       </div>
     </div>
   </section>
@@ -356,7 +356,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
     <div class="max-w-container-max mx-auto sobre-grid">
       <!-- Imagem Bio -->
       <div class="flex justify-center lg:justify-start" style="margin-bottom:0.5rem">
-        <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="sobre-img w-full" src="img/Quem%20%C3%A9%20o%20Dr.%20Fernando%20Torres.webp" decoding="async" loading="lazy" style="height:auto;width:100%;max-width:500px">
+        <img alt="Dr. Fernando Torres - Advocacia Trabalhista" class="sobre-img w-full" src="img/Quem%20%C3%A9%20o%20Dr.%20Fernando%20Torres.webp" width="410" height="512" decoding="async" loading="lazy" style="height:auto;width:100%;max-width:500px">
       </div>
       <!-- Texto -->
       <div class="space-y-8" style="display:flex;flex-direction:column;justify-content:center">
@@ -392,7 +392,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 <!-- Floating Notification Toast -->
 <div id="notification-toast" class="notification-toast">
   <button class="notification-close" onclick="this.parentElement.classList.remove('show')" aria-label="Fechar">×</button>
-  <img src="img/hero.webp" alt="Dr. Fernando Torres" class="notification-avatar" loading="lazy">
+  <img src="img/hero.webp" alt="Dr. Fernando Torres" class="notification-avatar" width="44" height="44" loading="lazy">
   <div class="notification-content">
     <p class="notification-text">Fale diretamente com o Dr. Fernando Torres no WhatsApp</p>
     <a href="https://wa.me/556992320246?text=Ol%C3%A1%2C%20vi%20o%20an%C3%BAncio%20no%20Google%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20trabalhista." target="_blank" rel="noopener" class="notification-cta">Falar Agora</a>
