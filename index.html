@@ -9,15 +9,56 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dr. Fernando Torres - Advogado Trabalhista">
 <meta property="og:description" content="Advocacia trabalhista em Rondônia. Especialista em direito do trabalho trabalhista. Rescisão indireta, horas extras e verbas rescisórias.">
-<meta property="og:image" content="https://SEU-SITE.vercel.app/img/hero.webp">
+<meta property="og:image" content="https://www.lp.fernandotorresadv.com/img/hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://SEU-SITE.vercel.app">
+<meta property="og:url" content="https://www.lp.fernandotorresadv.com">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dr. Fernando Torres - Advogado Trabalhista">
 <meta name="twitter:description" content="Advocacia trabalhista em Rondônia. Dr. Fernando Torres, especialista em direito do trabalho.">
-<meta name="twitter:image" content="https://SEU-SITE.vercel.app/img/hero.webp">
+<meta name="twitter:image" content="https://www.lp.fernandotorresadv.com/img/hero.webp">
+
+<link rel="preconnect" href="https://wa.me">
+
+<!-- Structured Data: LegalService + Attorney -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LegalService", "Attorney"],
+  "name": "Dr. Fernando Torres - Advogado Trabalhista",
+  "description": "Advocacia trabalhista em Rondônia. Especialista em direito do trabalho com mais de 15 anos de experiência.",
+  "url": "https://www.lp.fernandotorresadv.com",
+  "image": "https://www.lp.fernandotorresadv.com/img/hero.webp",
+  "telephone": "+556992320246",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+556992320246",
+    "contactType": "customer service",
+    "availableLanguage": ["Portuguese"]
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Rondônia" },
+    { "@type": "State", "name": "Acre" },
+    { "@type": "State", "name": "Amazonas" }
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "OAB",
+    "name": "OAB/RO 4725"
+  },
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://wa.me/556992320246"
+  ]
+}
+</script>
 
 <!-- Favicon inline SVG - zero requisições -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C69B3C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='m19 8 3 8a5 5 0 0 1-6 0zV7'/%3E%3Cpath d='M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1'/%3E%3Cpath d='m5 8 3 8a5 5 0 0 1-6 0zV7'/%3E%3Cpath d='M7 21h10'/%3E%3C/svg%3E">
@@ -170,12 +211,12 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
   <button class="md:hidden text-primary" aria-label="Menu" onclick="toggleMenu()">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
   </button>
-  <nav class="hidden md:flex gap-8">
+  <nav class="hidden md:flex gap-8" aria-label="Navegação principal">
     <a class="text-primary font-bold transition-colors" href="#inicio">Início</a>
     <a class="text-on-surface-variant transition-colors" href="#servicos">Serviços</a>
     <a class="text-on-surface-variant transition-colors" href="#sobre">Sobre</a>
   </nav>
-  <nav class="mobile-menu md:hidden" id="mobileMenu">
+  <nav class="mobile-menu md:hidden" id="mobileMenu" aria-label="Navegação mobile">
     <a href="#inicio" onclick="toggleMenu()">Início</a>
     <a href="#servicos" onclick="toggleMenu()">Serviços</a>
     <a href="#sobre" onclick="toggleMenu()">Sobre</a>
@@ -184,7 +225,7 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 </header>
 
 <!-- Main -->
-<main class="flex-grow pt-16">
+<main class="flex-grow pt-16" role="main">
   <!-- Hero Section -->
   <section class="hero-section relative pt-8 lg:pt-24 px-margin-mobile md:px-margin-desktop overflow-hidden" id="inicio">
     <div class="absolute inset-0 z-0 opacity-10" style="background-image:radial-gradient(circle at center,#c69b3c 0%,transparent 70%)"></div>
@@ -336,9 +377,10 @@ header.fixed{position:fixed;top:0;left:0;right:0;z-index:50;height:4rem;display:
 </main>
 
 <!-- Footer -->
-<footer>
+<footer role="contentinfo">
   <div class="text-primary font-bold text-headline-md tracking-wider">Dr. Fernando Torres</div>
   <p class="text-body-md text-on-surface-variant">Advogado Trabalhista - OAB/RO 4725</p>
+  <p class="text-label-md text-on-surface-variant">Atendimento em <strong class="text-primary">Rondônia</strong>, <strong class="text-primary">Acre</strong> e <strong class="text-primary">Amazonas</strong></p>
   <div class="flex gap-6 text-label-md">
     <a class="text-on-surface-variant transition-colors" href="#">Privacidade</a>
     <a class="text-on-surface-variant transition-colors" href="#">Termos de Uso</a>
