@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/rescisao", "destination": "/rescisao.html" },
+    { "source": "/horasextras", "destination": "/horasextras.html" }
+  ]
+}
